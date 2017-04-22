@@ -120,7 +120,8 @@ def sbrt2017(num_hiddens, var_dropout, dropout, weight_decay, num_features=39,
                            W_regularizer=l2(weight_decay),
                            U_regularizer=l2(weight_decay),
                            dropout_W=var_dropout,
-                           dropout_U=var_dropout))(o)
+                           dropout_U=var_dropout,
+                           consume_less='gpu'))(o)
 
     if dropout > 0.0:
         o = Dropout(dropout)(o)

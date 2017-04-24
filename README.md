@@ -52,13 +52,12 @@ $ python main.py eval --model data/models/sbrt2017.h5 --dataset .datasets/brsd/d
 * Librosa
 * Tensorflow
 * Keras
-* [openpyxl](https://pypi.python.org/pypi/openpyxl) (to [save the results in a excel file](extras/results2xlsx.py))
 
 ## Acknowledgements
 * [python_speech_features](https://github.com/jameslyons/python_speech_features) for the [audio preprocessing](preprocessing/audio.py)
 * [Google Magenta](https://github.com/tensorflow/magenta) for the [hparams](core/hparams.py)
 * @robertomest for helping me with everything
-* SANTOS, S. C. B.; ALCAIM, A. "Reduced Sets of Subword Units for Continuous Speech Recognition of Portuguese". Electronics Letters, v.36, p.586 588, 2000.
+* SANTOS, S. C. B.; ALCAIM, A. "Reduced Sets of Subword Units for Continuous Speech Recognition of Portuguese". Electronics Letters, v.36, p.586 588, 2000.
 
 ## License
 See [LICENSE](LICENSE) for more information

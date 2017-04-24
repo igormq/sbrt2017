@@ -56,7 +56,7 @@ def decode(inputs, **kwargs):
     if is_greedy:
         decoded = tf.nn.ctc_greedy_decoder(y_pred, seq_len)[0][0]
     else:
-        beam_width = kwargs.get('beam_width', 100)
+        beam_width = kwargs.get('beam_width', 400)
         top_paths = kwargs.get('top_paths', 1)
         merge_repeated = kwargs.get('merge_repeated', True)
 
